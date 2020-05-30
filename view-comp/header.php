@@ -1,41 +1,55 @@
+<?php
+ 	session_start();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <title></title
+      <title>asds</title>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 	</head>
 
         <header>
-          <nav>
+          <nav class="navbar navbar-light bg-light">
           <a href="#">
-            <img src="images/web-logo.png" alt="logo">
+            <img src="images/web-logo.png" alt="logo" height="140" width="140">
           </a>
 
             <ul>
               <li><a href="index.php">Home</a> </li>
-
               <li><a href="#">About Me</a> </li>
               <li><a href="#">Contact</a> </li>
             </ul>
 
             <div>
-              <form class="" action="php-scripts/login.script.php" method="post">
-                <input type="text" name="username" placeholder="Username/E-mail">
-                <input type="password" name="password" placeholder="Password">
+							<?php
+							if(isset($_SESSION['userId'])){
+								echo '<form class="" action="php-scripts/logout.script.php" method="post">
+	                <button type="submite" name="logout-submit">Logout</button>
+	              </form>';
+							}
 
-                <button type="submit" name="login-submit">Login</button>
-              </form>
-              <a href="signup.php">Register</a>
+							else {
+								echo '<form class="form-inline" action="php-scripts/login.script.php" method="post">
+	                <input type="text" name="emailusername" placeholder="Username/E-mail" class="form-control">
+	                <input type="password" name="password" placeholder="Password" class="form-control">
 
-              <form class="" action="php-scripts/logout.script.php" method="post">
-                <button type="submite" name="logut-submit">Logout</button>
-              </form>
+	                <button  type="submit" class="btn btn-primary " name="login-submit">Login</button>
+	              </form>
+
+	              <a href="signup.php">Register</a>';
+							}
+							 ?>
+
+
+
 
             </div>
           </nav>
         </header>
+
+			<body>
