@@ -4,34 +4,36 @@
 
   <main>
     <?php
-      if(isset($_SESSION['userId'])){
-        echo '<p>You are logged in!</p> ';
-      }
-
-      else {
-        echo '<p>You are logged out!</p>';
-      }
+      // if(isset($_SESSION['userId'])){
+      //   echo '<h5 class="display-7"><center><b>Login Successful! Welcome to Add To Cart!</b></center></h5> ';
+      // }
+      //
+      // else {
+      //   echo '<h5 class="display-7"><center><b>Maligayang pagdating, guest!</b></center></h5>';
+      // }
 
      ?>
 
+
+
+
+
      <div id="carouselSample" class="carousel slide carousell1" >
 
-    <div class="carousel-inner">
+    <div class="carousel-inner"  >
 
       <div class="carousel-item active">
         <img class ="d-block w-100" src="images/addtocart.png">
         <div class="carousel-caption">
-          <h2>Sunrise</h2>
-          Deer and Sunrise! Deer (singular and plural) are the hoofed ruminant mammals forming the family Cervidae. The two main groups of deer are the Cervinae, including the muntjac
+          <h2></h2>
+
         </div>
       </div>
 
       <div class="carousel-item">
         <img class ="d-block w-100" src="images/registerna.png">
         <div class="carousel-caption">
-          <h2>MoonMoon</h2>
-          The light side of the moon. The Moon is an astronomical body that orbits Earth as its only natural satellite. It is the fifth-largest satellite in the Solar System, and the largest among planetary satellites relative to the size of the planet that it orbits
-
+          <h2><button  type="submit" class="btn btn-primary " name="login-submit">Login</button></h2>
         </div>
 
       </div>
@@ -39,8 +41,7 @@
       <div class="carousel-item">
         <img class ="d-block w-100" src="images/protektado.png">
         <div class="carousel-caption">
-          <h2>Falls</h2>
-          Beautiful Waterfalls. A waterfall is an area where water flows over a vertical drop or a series of steep drops in the course of a stream or river. Waterfalls also occur where meltwater drops over the edge of a tabular iceberg or ice shelf.
+          <h2></h2>
         </div>
 
       </div>
@@ -58,7 +59,13 @@
           </div>
 
 
-                    </div>
+        </div>
+
+
+
+
+
+
 
   </main>
 

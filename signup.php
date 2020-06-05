@@ -3,9 +3,9 @@
  ?>
 
   <main>
-    <div >
+    <div>
       <section>
-        <h1>Registration Page</h1>
+        <!-- <h1>Registration Page</h1> -->
         <?php
           if(isset($_GET['error'])){
             if($_GET['error'] == "emptyfields"){
@@ -19,14 +19,52 @@
             echo '<p class = "">Sign up Successful!</p>';
           }
          ?>
-        <form action="php-scripts/signup.script.php" method="post">
-          <input type="text" name="username" placeholder="Username" >
-          <input type="text" name="email" placeholder="E-mail" >
-          <input type="password" name="password" placeholder="Password" >
-          <input type="password" name="confpassword" placeholder="Repeat Password" >
+<br>
+   <div class="container register-form">
+                <div class="form">
+                     <div class="note">
+                         <p>Registration Page</p>
+                     </div>
 
-          <button type="submit" name="signup-submit">Signup</button>
+<div class="form-content">
+
+
+        <form action="php-scripts/signup.script.php" method="post">
+    <div class="row">
+          <div class="col-md-6">
+
+              <div class="form-group">
+                  <input type="text" class="form-control" name="username" placeholder="Username" >
+              </div>
+
+              <div class="form-group">
+                  <input type="text" class="form-control" name="email" placeholder="E-mail" >
+              </div>
+
+          </div>
+
+          <div class="col-md-6">
+              <div class="form-group">
+          <input type="password" class="form-control" name="password" placeholder="Password" >
+              </div>
+
+                <div class="form-group">
+          <input type="password" class="form-control" name="confpassword" placeholder="Repeat Password" >
+                </div>
+              </div>
+
+          <button type="submit" class="btnSubmit" name="signup-submit">Signup</button>
         </form>
+
+  </div>
+</div>
+
+
+    </div>
+
+
+
+
       </section>
     </div>
   </main>
