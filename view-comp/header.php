@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <title> AddToCart </title>
+      <title> Add To Cart </title>
 
 <link rel="stylesheet" href="css/signup.css">
 
@@ -17,9 +17,9 @@
 	</head>
 
         <header>
-          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a8cdd6;">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #a8cdd6;">
           <a href="#">
-            <img src="images/web-logo-final.png" alt="logo" height="75" width="150">
+            <img src="images/web-logo-final3.png" alt="logo" height="110" width="120">
           </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,9 +30,9 @@
 
             <ul class="navbar-nav">
 
-              <li class="nav-item active"><b><a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a></b> </li>
-              <li class="nav-item"><b><a class="nav-link" href="#">Shop</a></b> </li>
-              <li class="nav-item"><b><a class="nav-link" href="#">Contact</a> </b></li>
+              <li class="nav-item active px-2"><b><a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a></b> </li>
+              <li class="nav-item px-2"><b><a class="nav-link" href="#">Shop</a></b> </li>
+              <li class="nav-item px-2"><b><a class="nav-link" href="#">Contact</a> </b></li>
 
             </ul>
 
@@ -40,22 +40,26 @@
 
             <div>
 							<?php
+              //$userId = $_SESSION['userId'];
+
 							if(isset($_SESSION['userId'])){
 								echo '<form class="" action="php-scripts/logout.script.php" method="post">
+                  <p class="lead" style="color:white; padding-right: 100px;">Welcome to Add to Cart, '.$_SESSION["userName"].'!</p>
 	                <button type="submit" class="btn btn-primary " name="logout-submit">Logout</button>
 	              </form>';
 							}
 
 							else {
 								echo '<form class="form-inline" action="php-scripts/login.script.php" method="post">
-	                <input type="text" name="emailusername" placeholder="Username/E-mail" class="form-control">
-	                <input type="password" name="password" placeholder="Password" class="form-control">
+	                <input type="text" name="emailusername" placeholder="Username/E-mail" class="form-control px-2">
+
+	                <input type="password" name="password" placeholder="Password" class="form-control px-2">
 
 	                <button  type="submit" class="btn btn-primary " name="login-submit">Login</button>
 	              </form>
-
+                  <br>
                 <form class="" action="signup.php" method="post">
-                  <button type="submit" class="btn btn-primary " name="link-signup">Walang Account? Register na dito!</button>
+                  <button type="submit" class="btn btn-sm btn-primary " name="link-signup">Walang Account? Register na dito!</button>
                 </form>';
 							}
 							 ?>
