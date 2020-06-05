@@ -15,7 +15,7 @@
               echo '<p class = "">Fill in all fields!</p>';
             }
           }
-          else if ($_GET["signup"] == "success"){
+          else if (@$_GET["signup"] == "success"){
             echo '<p class = "">Sign up Successful!</p>';
           }
          ?>

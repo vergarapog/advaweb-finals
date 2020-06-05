@@ -14,16 +14,26 @@
 	</head>
 
         <header>
-          <nav class="navbar navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <a href="#">
-            <img src="images/web-logo.png" alt="logo" height="140" width="140">
+            <img src="images/web-logo-final.png" alt="logo" height="75" width="150">
           </a>
 
-            <ul>
-              <li><a href="index.php">Home</a> </li>
-              <li><a href="#">About Me</a> </li>
-              <li><a href="#">Contact</a> </li>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav">
+
+              <li class="nav-item active"><a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
+              <li class="nav-item"><a class="nav-link" href="#">About Me</a> </li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a> </li>
+
             </ul>
+
+          </div>
 
             <div>
 							<?php
@@ -41,7 +51,7 @@
 	                <button  type="submit" class="btn btn-primary " name="login-submit">Login</button>
 	              </form>
 
-	              <a href="signup.php">Register</a>';
+	              <a href="signup.php">Walang Account? Register na dito!</a>';
 							}
 							 ?>
 
