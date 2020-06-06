@@ -15,7 +15,7 @@ if (isset($_POST['signup-submit'])) {
    }
 
    else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && (!preg_match("/^[a-zA-Z0-9]*$/", $username))) {
-     header("Location: ../signup.php?error=invalidemail&username");
+     header("Location: ../signup.php?error=invalidemailusername");
      exit();
    }
 
@@ -34,9 +34,14 @@ if (isset($_POST['signup-submit'])) {
      exit();
    }
 
+   else if (strlen($password) < 8) {
+     header("Location: ../signup.php?error=passwordcheck2&username=".$username."&email=".$email);
+     exit();
+   }
+
    else {
 
-     $sql = "SELECT idUser FROM users WHERE idUser=? ";
+     $sql = "SELECT usernameUser FROM users WHERE usernameUser=? ";
      $stmnt = mysqli_stmt_init($connection);
      if(!mysqli_stmt_prepare($stmnt, $sql)){
        header("Location: ../signup.php?error=sqlerror");
@@ -52,6 +57,7 @@ if (isset($_POST['signup-submit'])) {
            header("Location: ../signup.php?error=userTaken&email=".$email);
            exit();
          }
+
           else{
              $sql = "INSERT INTO users (usernameUser, emailUser, pwdUser) VALUES (?, ?, ?) ";
              $stmnt = mysqli_stmt_init($connection);

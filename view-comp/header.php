@@ -58,7 +58,7 @@
 
 	                <button  type="submit" class="btn btn-primary " name="login-submit">Login</button>
 	              </form>
-                  <br>
+                  
                 <form class="" action="signup.php" method="post">
                   <button type="submit" class="btn btn-sm btn-primary " name="link-signup">Walang Account? Register na dito!</button>
                 </form>';
