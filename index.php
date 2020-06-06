@@ -18,7 +18,7 @@
 
 
 
-     <div id="carouselSample" class="carousel slide carousell1" >
+     <div id="carouselSample" class="carousel slide" data-interval="4000" data-ride="carousel" >
 
     <div class="carousel-inner"  >
 

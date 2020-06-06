@@ -19,7 +19,7 @@
         <header>
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #a8cdd6;">
           <a href="#">
-            <img src="images/web-logo-final3.png" alt="logo" height="110" width="120">
+            <img src="images/web-logo-final4.png" alt="logo" height="60" width="130">
           </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,9 +43,10 @@
               //$userId = $_SESSION['userId'];
 
 							if(isset($_SESSION['userId'])){
-								echo '<form class="" action="php-scripts/logout.script.php" method="post">
-                  <p class="lead" style="color:white; padding-right: 100px;">Welcome to Add to Cart, '.$_SESSION["userName"].'!</p>
-	                <button type="submit" class="btn btn-primary " name="logout-submit">Logout</button>
+								echo '
+                <form class="form-inline" action="php-scripts/logout.script.php" method="post">
+                  <p class="lead" style="color:white; padding-right: 50px; padding-top: 15px;">Welcome to Add to Cart, '.$_SESSION["userName"].'!</p>
+	                <button  type="submit" class="btn btn-sm btn-primary " name="logout-submit">Logout</button>
 	              </form>';
 							}
 
