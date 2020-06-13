@@ -16,6 +16,7 @@
               </div>
             </div>
             <div class="col-md-4">
+              <h5>World Class</h5>
               <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
                 <p>Led by experienced professionals and progressive thinkers, the company has grown to be one of the top-notch platforms in the Philippines.
                  Committed to both quantity and quality, it provides consumers with a diverse selection of products from various trusted suppliers. </p>

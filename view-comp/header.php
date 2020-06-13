@@ -88,7 +88,7 @@ function validatePassLength() {
 
 							else {
 								echo '<form class="form-inline" action="php-scripts/login.script.php" method="post">
-	                <input type="text" name="emailusername" placeholder="Username/E-mail" class="form-control px-2">
+	                <input type="text" name="emailusername" placeholder="Username/E-mail" class="form-control px-2">&nbsp;&nbsp;&nbsp;
 
 	                <input type="password" name="password" placeholder="Password" class="form-control px-2">
 
