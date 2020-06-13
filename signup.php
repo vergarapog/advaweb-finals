@@ -60,13 +60,15 @@
 
           <div class="col-md-6">
               <div class="form-group">
-          <input type="password" class="form-control" name="password" placeholder="Password" >
-          <p><small>Password must have more than 8 characters.</small></p>
+          <input id="password1" type="password" class="form-control" name="password" placeholder="Password" >
+          <!-- <p><small>Password must have more than 8 characters.</small></p> -->
+          <p id="validate-status2">Password must have more than 8 characters.</p>
               </div>
 
                 <div class="form-group">
-          <input type="password" class="form-control" name="confpassword" placeholder="Repeat Password" >
+          <input id="password2" type="password" class="form-control" name="confpassword" placeholder="Repeat Password" >
                 </div>
+                <p id="validate-status"></p>
               </div>
 <br>
           <button type="submit" class="btnSubmit" name="signup-submit">Signup</button>
@@ -84,6 +86,8 @@
       </section>
     </div>
   </main>
+
+
 
 
 <br><br><br><br><br><br><br>

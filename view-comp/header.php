@@ -12,6 +12,40 @@
 <link rel="stylesheet" href="css/signup.css">
 <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="css/forindexcarousel.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $("#password2").keyup(validateConfPass);
+    });
+
+    $(document).ready(function() {
+      $("#password1").keyup(validatePassLength);
+    });
+
+function validateConfPass() {
+  var password1 = $("#password1").val();
+  var password2 = $("#password2").val();
+
+    if(password1 == password2) {
+       $("#validate-status").text("Passwords Match!");
+    }
+    else {
+        $("#validate-status").text("Passwords do not match, please try again");
+    }
+}
+
+function validatePassLength() {
+  var password1 = $("#password1").val();
+
+    if($('#password1').val().length < 8) {
+       $("#validate-status2").text("Password must have more than 8 characters.");
+    }
+    else {
+        $("#validate-status2").text("Password is secure!");
+    }
+}
+
+</script>
 
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
