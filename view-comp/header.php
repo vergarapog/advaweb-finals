@@ -10,6 +10,8 @@
       <title> Add To Cart </title>
 
 <link rel="stylesheet" href="css/signup.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/forindexcarousel.css">
 
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -58,7 +60,7 @@
 
 	                <button  type="submit" class="btn btn-primary " name="login-submit">Login</button>
 	              </form>
-                  
+
                 <form class="" action="signup.php" method="post">
                   <button type="submit" class="btn btn-sm btn-primary " name="link-signup">Walang Account? Register na dito!</button>
                 </form>';

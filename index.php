@@ -33,7 +33,7 @@
       <div class="carousel-item">
         <img class ="d-block w-100" src="images/registerna.png">
         <div class="carousel-caption">
-          <h2><button  type="submit" class="btn btn-primary " name="login-submit">Login</button></h2>
+          <!-- <h2><button  type="submit" class="btn btn-primary " name="login-submit">Login</button></h2> -->
         </div>
 
       </div>
