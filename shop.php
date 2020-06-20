@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>M-Dev Store</title>
+    <title>Add to cart shop</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -186,7 +186,7 @@
 
    <?php
 
-    include("includes/sideshop.php");
+    include("sideshop.php");
 
     ?>
 
@@ -207,7 +207,7 @@
 
                    <a href="details.php">
 
-                       <img class="img-responsive" src="admin_area/product_images/product-1.jpg" alt="Product 1">
+                       <img src="images/tempshirt.jpg" class="img-responsive"  alt="Product 1">
 
                    </a>
 
@@ -246,7 +246,7 @@
 
                    <a href="details.php">
 
-                       <img class="img-responsive" src="admin_area/product_images/product-2.jpg" alt="Product 1">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 2">
 
                    </a>
 
@@ -285,7 +285,7 @@
 
                    <a href="details.php">
 
-                       <img class="img-responsive" src="admin_area/product_images/Product-3b.jpg" alt="Product 1">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 3">
 
                    </a>
 
@@ -324,7 +324,7 @@
 
                    <a href="details.php">
 
-                       <img class="img-responsive" src="admin_area/product_images/Product-4a.jpg" alt="Product 1">
+                      <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 4">
 
                    </a>
 
@@ -363,7 +363,7 @@
 
                    <a href="details.php">
 
-                       <img class="img-responsive" src="admin_area/product_images/Product-5a.jpg" alt="Product 1">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 5">
 
                    </a>
 
@@ -402,7 +402,7 @@
 
                    <a href="details.php">
 
-                       <img class="img-responsive" src="admin_area/product_images/Product-6a.jpg" alt="Product 1">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 6">
 
                    </a>
 
@@ -443,7 +443,7 @@
 
                    <a href="details.php">
 
-                       <img class="img-responsive" src="admin_area/product_images/Product-6a.jpg" alt="Product 1">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 7">
 
                    </a>
 
@@ -483,7 +483,7 @@
 
                    <a href="details.php">
 
-                       <img class="img-responsive" src="admin_area/product_images/Product-6a.jpg" alt="Product 1">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 8">
 
                    </a>
 
@@ -523,7 +523,7 @@
 
                    <a href="details.php">
 
-                       <img class="img-responsive" src="admin_area/product_images/Product-6a.jpg" alt="Product 1">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 9">
 
                    </a>
 
@@ -563,7 +563,7 @@
 
                    <a href="details.php">
 
-                       <img class="img-responsive" src="admin_area/product_images/Product-6a.jpg" alt="Product 1">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 10">
 
                    </a>
 
@@ -597,45 +597,7 @@
 
                    </div>
 
-                   <div class="col-md-4 col-sm-6 center-responsive">
 
-                       <div class="product">
-
-                   <a href="details.php">
-
-                       <img class="img-responsive" src="admin_area/product_images/Product-6a.jpg" alt="Product 1">
-
-                   </a>
-
-                   <div class="text">
-
-                       <h3>
-                           <a href="details.php">
-                               M-Dev Woman T-Shirt
-                           </a>
-                       </h3>
-
-                       <p class="price">Php 30</p>
-
-                       <p class="button">
-
-                           <a href="details.php" class="btn btn-default">View Details</a>
-
-                           <a href="details.php" class="btn btn-primary">
-
-                               <i class="fa fa-shopping-cart">
-                                   Add To Cart
-                               </i>
-
-                           </a>
-
-                       </p>
-
-                   </div>
-
-                   </div>
-
-                   </div>
                </div>
 
                <!-- <center>
@@ -659,11 +621,11 @@
 
 
    <!-- Caller of the footer-->
-   <?php
+   <!-- <?php
 
-    include("includes/footer.php");
+    include("view-comp/footer.php");
 
-    ?>
+    ?> -->
 
     <script src="js/jquery-331.min.js"></script>
     <script src="js/bootstrap-337.min.js"></script>
