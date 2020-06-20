@@ -2,11 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Add to cart shop</title>
-    <link rel="stylesheet" href="styles/bootstrap-337.min.css">
-    <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- <link rel="stylesheet" href="styles/bootstrap-337.min.css">
+    <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css"> -->
+
     <link rel="stylesheet" href="css/style.css">
+
+    <?php
+      require "view-comp/header.php";
+     ?>
+
 </head>
 <body>
 
@@ -18,7 +28,7 @@
            <div class="col-md-6 offer"><!-- DIV 2 START -->
 
                <a href="#" class="btn btn-success btn-sm">Welcome</a>
-               <a href="checkout.php">4 Items In Your Cart | Total Price: Php 300 </a>
+               <a href="checkout.php">Template: 4 Items In Your Cart | Total Price: Php 300 </a>
 
            </div><!-- DIV 2 END -->
 
@@ -184,11 +194,11 @@
 
   <!-- Caller of the sideshop format-->
 
-   <?php
+   <!-- <?php
 
     include("sideshop.php");
 
-    ?>
+    ?> -->
 
            </div>
 
@@ -207,7 +217,7 @@
 
                    <a href="details.php">
 
-                       <img src="images/tempshirt.jpg" class="img-responsive"  alt="Product 1">
+                       <img src="images/tempshirt.jpg" class="img-responsive"  alt="Product 1" width="200" length="200">
 
                    </a>
 
@@ -246,7 +256,7 @@
 
                    <a href="details.php">
 
-                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 2">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 2" width="200" length="200">
 
                    </a>
 
@@ -285,7 +295,7 @@
 
                    <a href="details.php">
 
-                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 3">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 3" width="200" length="200">
 
                    </a>
 
@@ -324,7 +334,7 @@
 
                    <a href="details.php">
 
-                      <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 4">
+                      <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 4" width="200" length="200">
 
                    </a>
 
@@ -363,7 +373,7 @@
 
                    <a href="details.php">
 
-                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 5">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 5" width="200" length="200">
 
                    </a>
 
@@ -402,7 +412,7 @@
 
                    <a href="details.php">
 
-                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 6">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 6" width="200" length="200">
 
                    </a>
 
@@ -443,7 +453,7 @@
 
                    <a href="details.php">
 
-                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 7">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 7" width="200" length="200">
 
                    </a>
 
@@ -483,7 +493,7 @@
 
                    <a href="details.php">
 
-                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 8">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 8" width="200" length="200">
 
                    </a>
 
@@ -523,7 +533,7 @@
 
                    <a href="details.php">
 
-                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 9">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 9" width="200" length="200">
 
                    </a>
 
@@ -563,7 +573,7 @@
 
                    <a href="details.php">
 
-                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 10">
+                       <img src="images/tempshirt.jpg" class="img-responsive" alt="Product 10" width="200" length="200">
 
                    </a>
 
