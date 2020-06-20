@@ -67,7 +67,7 @@ function validatePassLength() {
             <ul class="navbar-nav">
 
               <li class="nav-item active px-2"><b><a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a></b> </li>
-              <li class="nav-item px-2"><b><a class="nav-link" href="#">Shop</a></b> </li>
+              <li class="nav-item px-2"><b><a class="nav-link" href="shop.php">Shop</a></b> </li>
               <li class="nav-item px-2"><b><a class="nav-link" href="#">Contact</a> </b></li>
 
             </ul>

@@ -6,7 +6,7 @@
     <title>M-Dev Store</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -638,7 +638,7 @@
                    </div>
                </div>
 
-               <center>
+               <!-- <center>
                    <ul class="pagination">
                        <li class="active;"><a href="#">First Page</a></li>
                        <li><a href="#">1</a></li>
@@ -648,7 +648,7 @@
                        <li><a href="#">5</a></li>
                        <li><a href="#">Last Page</a></li>
                    </ul>
-               </center>
+               </center> -->
 
            </div>
 
