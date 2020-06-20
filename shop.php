@@ -60,8 +60,8 @@
 
                <a href="index.php" class="navbar-brand home">
 
-                   <img src="images/" alt="M-dev-Store Logo" class="hidden-xs">
-                   <img src="images/" alt="M-dev-Store Logo Mobile" class="visible-xs">
+                   <img src="images/" alt="Add to cart" class="hidden-xs">
+                   <img src="images/" alt="Add to cart" class="visible-xs">
 
                </a>
 
