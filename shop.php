@@ -91,7 +91,7 @@
 
                        <h3>
                            <a href="details.php">
-                               M-Dev Woman T-Shirt
+                               Woman T-Shirt
                            </a>
                        </h3>
 
@@ -130,7 +130,7 @@
 
                        <h3>
                            <a href="details.php">
-                               M-Dev Woman T-Shirt
+                                Woman T-Shirt
                            </a>
                        </h3>
 
@@ -169,7 +169,7 @@
 
                        <h3>
                            <a href="details.php">
-                               M-Dev Woman T-Shirt
+                                Woman T-Shirt
                            </a>
                        </h3>
 
@@ -208,7 +208,7 @@
 
                        <h3>
                            <a href="details.php">
-                               M-Dev Woman T-Shirt
+                                Woman T-Shirt
                            </a>
                        </h3>
 
@@ -247,7 +247,7 @@
 
                        <h3>
                            <a href="details.php">
-                               M-Dev Woman T-Shirt
+                                Woman T-Shirt
                            </a>
                        </h3>
 
@@ -286,7 +286,7 @@
 
                        <h3>
                            <a href="details.php">
-                               M-Dev Woman T-Shirt
+                               Woman T-Shirt
                            </a>
                        </h3>
 
@@ -327,7 +327,7 @@
 
                        <h3>
                            <a href="details.php">
-                               M-Dev Woman T-Shirt
+                                Woman T-Shirt
                            </a>
                        </h3>
 
@@ -367,7 +367,7 @@
 
                        <h3>
                            <a href="details.php">
-                               M-Dev Woman T-Shirt
+                                Woman T-Shirt
                            </a>
                        </h3>
 
@@ -407,7 +407,7 @@
 
                        <h3>
                            <a href="details.php">
-                               M-Dev Woman T-Shirt
+                                Woman T-Shirt
                            </a>
                        </h3>
 
@@ -447,7 +447,7 @@
 
                        <h3>
                            <a href="details.php">
-                               M-Dev Woman T-Shirt
+                                Woman T-Shirt
                            </a>
                        </h3>
 
