@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="css/footer.css">
-    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
 
     <?php
       require "view-comp/header.php";
@@ -49,38 +49,51 @@
            <div class="col-md-9"><!-- col-md-9 Begin -->
                <div id="productMain" class="row"><!-- row Begin -->
                    <div class="col-sm-6"><!-- col-sm-6 Begin -->
+
                        <div id="mainImage"><!-- #mainImage Begin -->
-                           <div id="myCarousel" class="carousel slide" data-ride="carousel"><!-- carousel slide Begin -->
-                               <ol class="carousel-indicators"><!-- carousel-indicators Begin -->
-                                   <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
-                                   <li data-target="#myCarousel" data-slide-to="1"></li>
-                                   <li data-target="#myCarousel" data-slide-to="2"></li>
-                               </ol><!-- carousel-indicators Finish -->
+                         <div id="carouselSample" class="carousel slide" data-interval="4000" data-ride="carousel" >
+                           <ol class="carousel-indicators"><!-- carousel-indicators Begin -->
+                               <li data-target="#carouselSample" data-slide-to="0" class="active" ></li>
+                               <li data-target="#carouselSample" data-slide-to="1"></li>
+                               <li data-target="#carouselSample" data-slide-to="2"></li>
+                           </ol><!-- carousel-indicators Finish -->
 
-                               <div class="carousel-inner">
-                                   <div class="item active">
-                                       <center><img src="images/menshirt.jpg" class="img-responsive" alt="menshirt" width="200" length="200"></center>
-                                   </div>
-                                   <div class="item">
-                                       <center><img src="images/menshirt.jpg" class="img-responsive" alt="menshirt" width="200" length="200"></center>
-                                   </div>
-                                   <div class="item">
-                                       <center><img src="images/menshirt.jpg" class="img-responsive" alt="menshirt" width="200" length="200"></center>
-                                   </div>
-                               </div>
+                               <div class="carousel-inner"  >
 
-                               <a href="#myCarousel" class="left carousel-control" data-slide="prev"><!-- left carousel-control Begin -->
-                                   <span class="glyphicon glyphicon-chevron-left"></span>
-                                   <span class="sr-only">Previous</span>
-                               </a><!-- left carousel-control Finish -->
+                                    <div class="carousel-item active">
+                                        <img src="images/menshirt.jpg" class="img-responsive" alt="menshirt" width="200" length="200">
+                                        <div class="carousel-caption">
+                                          <h2></h2>
+                                        </div>
+                                    </div>
 
-                               <a href="#myCarousel" class="right carousel-control" data-slide="next"><!-- right carousel-control Begin -->
-                                   <span class="glyphicon glyphicon-chevron-right"></span>
-                                   <span class="sr-only">Previous</span>
-                               </a><!-- right carousel-control Finish -->
+                                    <div class="carousel-item">
+                                        <img src="images/menshirt.jpg" class="img-responsive" alt="menshirt" width="200" length="200">
+                                        <div class="carousel-caption">
+                                          <!-- <h2><button  type="submit" class="btn btn-primary " name="login-submit">Login</button></h2> -->
+                                        </div>
+                                    </div>
 
-                           </div><!-- carousel slide Finish -->
+                                    <div class="carousel-item">
+                                        <img src="images/menshirt.jpg" class="img-responsive" alt="menshirt" width="200" length="200">
+                                        <div class="carousel-caption">
+                                          <h2></h2>
+                                        </div>
+                                    </div>
+
+                                    <a href="#carouselSample" data-slide="prev" class="carousel-control-prev">
+                                      <span class="carousel-control-prev-icon"></span>
+                                    </a>
+
+                                    <a href="#carouselSample" data-slide="next" class="carousel-control-next">
+                                      <span class="carousel-control-next-icon"></span>
+                                    </a>
+
+                                </div>
+
+                        </div>
                        </div><!-- mainImage Finish -->
+
                    </div><!-- col-sm-6 Finish -->
 
                    <div class="col-sm-6"><!-- col-sm-6 Begin -->
@@ -121,7 +134,7 @@
                                    </div><!-- col-md-7 Finish -->
                                </div><!-- form-group Finish -->
 
-                               <p class="price">$50</p>
+                               <p class="price">Php 50</p>
 
                                <p class="text-center buttons"><button class="btn btn-primary i fa fa-shopping-cart"> Add to cart</button></p>
 
@@ -129,27 +142,6 @@
 
                        </div><!-- box Finish -->
 
-                       <div class="row" id="thumbs"><!-- row Begin -->
-
-                           <div class="col-xs-4"><!-- col-xs-4 Begin -->
-                               <a href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="images/menshirt.jpg" alt="menshirt.jpg" class="img-responsive" width="200" length="200">
-                               </a><!-- thumb Finish -->
-                           </div><!-- col-xs-4 Finish -->
-
-                           <div class="col-xs-4"><!-- col-xs-4 Begin -->
-                               <a href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="images/menshirt.jpg" alt="menshirt.jpg" class="img-responsive" width="200" length="200">
-                               </a><!-- thumb Finish -->
-                           </div><!-- col-xs-4 Finish -->
-
-                           <div class="col-xs-4"><!-- col-xs-4 Begin -->
-                               <a href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="images/menshirt.jpg" alt="menshirt.jpg" class="img-responsive" width="200" length="200">
-                               </a><!-- thumb Finish -->
-                           </div><!-- col-xs-4 Finish -->
-
-                       </div><!-- row Finish -->
 
                    </div><!-- col-sm-6 Finish -->
 
@@ -194,44 +186,14 @@
                             <div class="text"><!-- text Begin -->
                                 <h3><a href="details.php">Top Women</a></h3>
 
-                                <p class="price">$40</p>
+                                <p class="price">Php 40</p>
 
                             </div><!-- text Finish -->
 
                         </div><!-- product same-height Finish -->
                    </div><!-- col-md-3 col-sm-6 center-responsive Finish -->
 
-                   <div class="col-md-3 col-sm-6 center-responsive"><!-- col-md-3 col-sm-6 center-responsive Begin -->
-                       <div class="product same-height"><!-- product same-height Begin -->
-                           <a href="details.php">
-                               <img class="img-responsive" src="images/tempshirt.jpg" alt="Product 6" width="200" length="200">
-                            </a>
 
-                            <div class="text"><!-- text Begin -->
-                                <h3><a href="details.php">Shirt Women</a></h3>
-
-                                <p class="price">$45</p>
-
-                            </div><!-- text Finish -->
-
-                        </div><!-- product same-height Finish -->
-                   </div><!-- col-md-3 col-sm-6 center-responsive Finish -->
-
-                   <div class="col-md-3 col-sm-6 center-responsive"><!-- col-md-3 col-sm-6 center-responsive Begin -->
-                       <div class="product same-height"><!-- product same-height Begin -->
-                           <a href="details.php">
-                               <img class="img-responsive" src="images/tempshirt.jpg" alt="Product 6" width="200" length="200">
-                            </a>
-
-                            <div class="text"><!-- text Begin -->
-                                <h3><a href="details.php">T-Shirt Women</a></h3>
-
-                                <p class="price">$50</p>
-
-                            </div><!-- text Finish -->
-
-                        </div><!-- product same-height Finish -->
-                   </div><!-- col-md-3 col-sm-6 center-responsive Finish -->
 
                </div><!-- #row same-heigh-row Finish -->
 
