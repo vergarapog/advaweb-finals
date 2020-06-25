@@ -11,7 +11,7 @@
 
 <link rel="stylesheet" href="css/signup.css">
 <link rel="stylesheet" href="css/footer.css">
-<link rel="stylesheet" href="css/forindexcarousel.css">
+<!-- <link rel="stylesheet" href="css/forindexcarousel.css"> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {

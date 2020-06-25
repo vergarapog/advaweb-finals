@@ -61,21 +61,21 @@
                                <div class="carousel-inner"  >
 
                                     <div class="carousel-item active">
-                                        <img src="images/menshirt.jpg" class="img-responsive" alt="menshirt" width="200" length="200">
+                                        <img src="images/menshirt.jpg" class="img-responsive" alt="menshirt" width="400" length="300">
                                         <div class="carousel-caption">
                                           <h2></h2>
                                         </div>
                                     </div>
 
                                     <div class="carousel-item">
-                                        <img src="images/menshirt.jpg" class="img-responsive" alt="menshirt" width="200" length="200">
+                                        <img src="images/menshirt.jpg" class="img-responsive" alt="menshirt" width="400" length="300">
                                         <div class="carousel-caption">
                                           <!-- <h2><button  type="submit" class="btn btn-primary " name="login-submit">Login</button></h2> -->
                                         </div>
                                     </div>
 
                                     <div class="carousel-item">
-                                        <img src="images/menshirt.jpg" class="img-responsive" alt="menshirt" width="200" length="200">
+                                        <img src="images/menshirt.jpg" class="img-responsive" alt="menshirt" width="400" length="300">
                                         <div class="carousel-caption">
                                           <h2></h2>
                                         </div>
