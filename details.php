@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
 
     <?php
       require "view-comp/header.php";
@@ -59,13 +59,13 @@
 
                                <div class="carousel-inner">
                                    <div class="item active">
-                                       <center><img src="images/tempshirt.jpg" class="img-responsive" alt="tempshirt" width="200" length="200"></center>
+                                       <center><img src="images/menshirt.jpg" class="img-responsive" alt="menshirt" width="200" length="200"></center>
                                    </div>
                                    <div class="item">
-                                       <center><img src="images/tempshirt.jpg" class="img-responsive" alt="tempshirt" width="200" length="200"></center>
+                                       <center><img src="images/menshirt.jpg" class="img-responsive" alt="menshirt" width="200" length="200"></center>
                                    </div>
                                    <div class="item">
-                                       <center><img src="images/tempshirt.jpg" class="img-responsive" alt="tempshirt" width="200" length="200"></center>
+                                       <center><img src="images/menshirt.jpg" class="img-responsive" alt="menshirt" width="200" length="200"></center>
                                    </div>
                                </div>
 
@@ -91,16 +91,16 @@
                                <div class="form-group"><!-- form-group Begin -->
                                    <label for="" class="col-md-5 control-label">Products Quantity</label>
 
-                                   <div class="col-md-7"><!-- col-md-7 Begin -->
-                                          <select name="product_qty" id="" class="form-control"><!-- select Begin -->
+                                   <div class="col-md-7">
+                                          <select name="product_qty" id="" class="form-control">
                                            <option>1</option>
                                            <option>2</option>
                                            <option>3</option>
                                            <option>4</option>
                                            <option>5</option>
-                                           </select><!-- select Finish -->
+                                           </select>
 
-                                    </div><!-- col-md-7 Finish -->
+                                    </div>
 
                                </div><!-- form-group Finish -->
 
@@ -133,19 +133,19 @@
 
                            <div class="col-xs-4"><!-- col-xs-4 Begin -->
                                <a href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="admin_area/product_images/product-1.jpg" alt="product 1" class="img-responsive">
+                                   <img src="images/menshirt.jpg" alt="menshirt.jpg" class="img-responsive" width="200" length="200">
                                </a><!-- thumb Finish -->
                            </div><!-- col-xs-4 Finish -->
 
                            <div class="col-xs-4"><!-- col-xs-4 Begin -->
                                <a href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="admin_area/product_images/product-2.jpg" alt="product 2" class="img-responsive">
+                                   <img src="images/menshirt.jpg" alt="menshirt.jpg" class="img-responsive" width="200" length="200">
                                </a><!-- thumb Finish -->
                            </div><!-- col-xs-4 Finish -->
 
                            <div class="col-xs-4"><!-- col-xs-4 Begin -->
                                <a href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="admin_area/product_images/Product-4a.jpg" alt="product 4" class="img-responsive">
+                                   <img src="images/menshirt.jpg" alt="menshirt.jpg" class="img-responsive" width="200" length="200">
                                </a><!-- thumb Finish -->
                            </div><!-- col-xs-4 Finish -->
 
@@ -188,11 +188,11 @@
                    <div class="col-md-3 col-sm-6 center-responsive"><!-- col-md-3 col-sm-6 center-responsive Begin -->
                        <div class="product same-height"><!-- product same-height Begin -->
                            <a href="details.php">
-                               <img class="img-responsive" src="admin_area/product_images/Product-6a.jpg" alt="Product 6">
+                               <img class="img-responsive" src="images/tempshirt.jpg" alt="Product 6" width="200" length="200">
                             </a>
 
                             <div class="text"><!-- text Begin -->
-                                <h3><a href="details.php">M-Dev Tank Top Women</a></h3>
+                                <h3><a href="details.php">Top Women</a></h3>
 
                                 <p class="price">$40</p>
 
@@ -204,11 +204,11 @@
                    <div class="col-md-3 col-sm-6 center-responsive"><!-- col-md-3 col-sm-6 center-responsive Begin -->
                        <div class="product same-height"><!-- product same-height Begin -->
                            <a href="details.php">
-                               <img class="img-responsive" src="admin_area/product_images/Product-5a.jpg" alt="Product 6">
+                               <img class="img-responsive" src="images/tempshirt.jpg" alt="Product 6" width="200" length="200">
                             </a>
 
                             <div class="text"><!-- text Begin -->
-                                <h3><a href="details.php">M-Dev Street Shirt Women</a></h3>
+                                <h3><a href="details.php">Shirt Women</a></h3>
 
                                 <p class="price">$45</p>
 
@@ -220,11 +220,11 @@
                    <div class="col-md-3 col-sm-6 center-responsive"><!-- col-md-3 col-sm-6 center-responsive Begin -->
                        <div class="product same-height"><!-- product same-height Begin -->
                            <a href="details.php">
-                               <img class="img-responsive" src="admin_area/product_images/Product-4a.jpg" alt="Product 6">
+                               <img class="img-responsive" src="images/tempshirt.jpg" alt="Product 6" width="200" length="200">
                             </a>
 
                             <div class="text"><!-- text Begin -->
-                                <h3><a href="details.php">M-Dev Polo T-Shirt Women</a></h3>
+                                <h3><a href="details.php">T-Shirt Women</a></h3>
 
                                 <p class="price">$50</p>
 
