@@ -21,12 +21,12 @@
                      <td width="17%" valign="top"><a href="product.php?id=' . $id . '"><img style="border:#666 15px solid;" src="images/' . $id . '.png" alt="' . $product_name . '" width="600" height="400" border="1" /></a></td>
                      <td width="83%" valign="top" style="color:white;"><b>' . $product_name . '</b><br />
                        ‎₱' . $price . '<br /><br><br>
-                       <a class="p-3 mb-2 bg-info text-white" href="product.php?id=' . $id . '">View Product Details</a></td>
+                       <a class="p-3 mb-2 bg-info text-white" href="details.php?id=' . $id . '">View Product Details</a></td>
                    </tr>
                  </table>';
                }
            } else {
-           	$dynamicList = "No results found";
+           	$dynamicList = '<br><br> <br> <br><br><br> <br> <br>  <div style="text-align: center; color: white;"><h4>No results found, please try again.</h4></div> <br><br><br> <br> <br>';
            }
       }
  mysqli_close($connection);

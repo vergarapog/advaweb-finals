@@ -21,7 +21,7 @@
            <br>
            <td width="83%"  style="color:white;"><b>' . $product_name . '</b><br/>
              ‎₱' . $price . '<br /><br><br>
-             <a class="p-3 mb-2 bg-info text-white" href="product.php?id=' . $id . '">View Product Details</a></td>
+             <a class="p-3 mb-2 bg-info text-white" href="details.php?id=' . $id . '">View Product Details</a></td>
          </tr>
        </table>';
      }
