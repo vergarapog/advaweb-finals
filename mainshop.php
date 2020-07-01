@@ -17,8 +17,9 @@
 
  			 $dynamicList .= '<table width="100%" border="0" cellspacing="0" cellpadding="6" class="center">
          <tr>
-           <td width="17%" valign="top"><a href="product.php?id=' . $id . '"><img style="border:#666 15px solid;" src="images/' . $id . '.png" alt="' . $product_name . '" width="600" height="400" border="1" /></a></td>
-           <td width="83%" valign="top" style="color:white;"><b>' . $product_name . '</b><br />
+           <td  valign="top"><a href="product.php?id=' . $id . '"><img style="border:#666 15px solid;" src="images/' . $id . '.png" alt="' . $product_name . '" width="600" height="400" border="1" /></a></td>
+           <br>
+           <td width="83%"  style="color:white;"><b>' . $product_name . '</b><br/>
              ‎₱' . $price . '<br /><br><br>
              <a class="p-3 mb-2 bg-info text-white" href="product.php?id=' . $id . '">View Product Details</a></td>
          </tr>
@@ -34,6 +35,7 @@
    <input class="form-control mr-sm-2 col-9" type="text" name="search" placeholder="Search">
    <button class="btn btn-dark btn-rounded btn-sm my-0 col-1" type="submit" name="search-submit">SEARCH</button>
  </form>
+
   <main style="background-color:gray;">
 
 

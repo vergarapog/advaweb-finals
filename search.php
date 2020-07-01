@@ -1,7 +1,7 @@
 <?php
   require "view-comp/header.php";
  ?>
-<h2>Search results:</h2>
+
  <?php
 
  require 'php-scripts/databasehandler.script.php';
@@ -31,11 +31,19 @@
       }
  mysqli_close($connection);
  ?>
+<br>
+ <form class="form-inline mr-auto row justify-content-center " action="search.php" method="post" valign="center">
+   <input class="form-control mr-sm-2 col-9" type="text" name="search" placeholder="Search">
+   <button class="btn btn-dark btn-rounded btn-sm my-0 col-1" type="submit" name="search-submit">SEARCH</button>
+ </form>
+ <br>
+
+
+
  <main style="background-color:gray;">
-
-
+   <br>
+    <div style="text-align: center; color: white;"><h2>Search results:</h2></div>
     <p><?php echo $dynamicList; ?><br />
-      </p>
 
     </main>
 
