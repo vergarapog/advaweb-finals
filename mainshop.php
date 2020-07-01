@@ -28,9 +28,15 @@
  	$dynamicList = "We have no products listed in our store yet";
  }
  mysqli_close($connection);
- ?>
+ ?> <br>
 
+ <form class="form-inline mr-auto row justify-content-center " action="search.php" method="post" valign="center">
+   <input class="form-control mr-sm-2 col-9" type="text" name="search" placeholder="Search">
+   <button class="btn btn-dark btn-rounded btn-sm my-0 col-1" type="submit" name="search-submit">SEARCH</button>
+ </form>
   <main style="background-color:gray;">
+
+
      <p><?php echo $dynamicList; ?><br />
        </p>
 

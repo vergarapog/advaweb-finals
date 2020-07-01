@@ -64,6 +64,10 @@ body{ margin:0px; }
 #f { -ms-grid-column: 2; -ms-grid-row: 2; }
 #g { -ms-grid-column: 3; -ms-grid-row: 2; }
 #h { -ms-grid-column: 4; -ms-grid-row: 2; }
+
+input[type="text"]{
+              text-align: center;
+          }
 </style>
 
 
@@ -73,7 +77,7 @@ body{ margin:0px; }
 
         <header>
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #a8cdd6;">
-          <a href="#">
+          <a href="index.php">
             <img src="images/web-logo-final4.png" alt="logo" height="60" width="130">
           </a>
 
@@ -111,11 +115,12 @@ body{ margin:0px; }
 
 	                <input type="password" name="password" placeholder="Password" class="form-control px-2">
 
-	                <button  type="submit" class="btn btn-primary " name="login-submit">Login</button>
+	                <button  type="submit" style="margin-left: 7px" class="btn btn-primary " name="login-submit">Login</button>
 	              </form>
 
                 <form class="" action="signup.php" method="post">
-                  <button type="submit" class="btn btn-sm btn-primary " name="link-signup">Walang Account? Register na dito!</button>
+
+                  <button type="submit" style="margin-top: 7px" class="btn btn-sm btn-primary " name="link-signup">Walang Account? Register na dito!</button>
                 </form>';
 							}
 							 ?>
