@@ -7,6 +7,7 @@
  		if(isset($_SESSION['userId'])){
              if (isset($_GET['id'])) {
              	// Connect to the MySQL database
+              $userName  = $_SESSION["userName"];
               $quantity = $_POST["quantity"];
               $checkoutlink = "";
                include "php-scripts/databasehandler.script.php";
@@ -39,33 +40,54 @@
               header("Location: notloggedin.php");
            }
  ?>
- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
- <html xmlns="http://www.w3.org/1999/xhtml">
- <head>
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <title><?php echo $product_name; ?></title>
- <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
- </head>
- <body>
- <div align="center" id="mainWrapper">
 
+   <div class="container register-form">
+                <div class="form">
+                     <div class="note">
+                         <p>Checkout Product</p>
+                     </div>
+<div class="form-content">
+  <fieldset disabled>
+   <form class=" mr-auto  justify-content-center " action="search.php" method="post" valign="center">
+     <div class="form-group row">
+       <label for="colFormLabel" class="col-sm-2 col-form-label">Username</label>
+       <div class="col-sm-10">
+         <input type="email" class="form-control" id="colFormLabel" placeholder="<?php echo $userName; ?> ">
+       </div>
+     </div>
+     <div class="form-group row">
+       <label for="colFormLabel" class="col-sm-2 col-form-label">Name</label>
+       <div class="col-sm-10">
+         <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+       </div>
+     </div>
+      </fieldset>
+     <div class="form-group row">
+       <label for="colFormLabel" class="col-sm-2 col-form-label">Address</label>
+       <div class="col-sm-10">
+         <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+       </div>
+     </div>
+   </form>
+
+
+
+<br>
+<h4>Products Ordered:</h4><br>
    <div id="pageContent">
-   <table width="100%" border="0" cellspacing="0" cellpadding="15">
+   <table width="100%" border="0" cellspacing="0" cellpadding="15" >
    <tr>
-     <td width="19%" valign="top"><img src="images/<?php echo $id; ?>.png" width="700" height="500" alt="<?php echo $product_name; ?>" /><br />
-       <a style="padding-left: 260px;" href="images/<?php echo $id; ?>.png">View Full Size Image</a></td>
+     <td width="19%" valign="top"><img src="images/<?php echo $id; ?>.png" width="500" height="300" alt="<?php echo $product_name; ?>" /><br />
+       <!-- <a style="padding-left: 260px;" href="images/<?php echo $id; ?>.png">View Full Size Image</a></td> -->
      <td width="81%" valign="top"><h3><?php echo $product_name; ?></h3>
-       <p><?php echo "₱".$price; ?><br />
-         <br />
 
- <br />
-         <?php echo $details; ?>
+         <br /><u></u>
+ <p class="h5" >Price: <b style="color: red;"><?php echo "₱".$price; ?></b><br />
+ <br /> </p>
+
+<p class="h5">Quantity: <b > <?php echo $quantity; ?></b>
  <br />
          </p>
-
-    <?php echo $quantity; ?>
-
-
 
        </td>
      </tr>
@@ -73,6 +95,10 @@
    </div>
 
  </div>
+  </div>
+   </div>
+
+
  <?php
    require "view-comp/footer.php";
   ?>

@@ -45,13 +45,50 @@
 
 
         <form action="php-scripts/signup.script.php" method="post">
+          <div class="form-row">
+    <div class="col-md-4 mb-3">
+
+      <input type="text" class="form-control" name="fName" placeholder="First name" value="" required>
+
+    </div>
+    <div class="col-md-3 mb-3">
+
+      <input type="text" class="form-control" name="mName" placeholder="Middle name" value="" required>
+
+    </div>
+
+    <div class="col-md-4 mb-3">
+
+      <div class="input-group">
+
+        <input type="text" class="form-control"name="lName"  placeholder="Last name"  required>
+
+      </div>
+    </div>
+    <div class="col-md-1 mb-3">
+
+      <input type="text" class="form-control" name="suffix" placeholder="Suffix" required>
+
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-12 mb-3">
+
+      <input type="text" class="form-control" name="address" placeholder="Address" required>
+
+    </div>
+
+
+  </div>
+
+  <!-- //end of name address and start of username -->
     <div class="row">
           <div class="col-md-6">
 
               <div class="form-group">
                   <input type="text" class="form-control" name="username" placeholder="Username" >
               </div>
-              
+
               <br>
               <div class="form-group">
                   <input type="text" class="form-control" name="email" placeholder="E-mail" >
