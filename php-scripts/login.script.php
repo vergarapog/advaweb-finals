@@ -33,6 +33,12 @@
                   $_SESSION['userId'] = $row['idUser'];
                   $_SESSION['userName'] = $row['usernameUser'];
 
+                  $_SESSION['fName'] = $row['fName'];
+                  $_SESSION['mName'] = $row['mName'];
+                  $_SESSION['lName'] = $row['lName'];
+                  $_SESSION['suffix'] = $row['suffix'];
+                  $_SESSION['address'] = $row['address'];
+
                   header("Location: ../mainshop.php?login=success");
                   exit();
                 }

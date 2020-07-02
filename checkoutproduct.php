@@ -7,7 +7,13 @@
  		if(isset($_SESSION['userId'])){
              if (isset($_GET['id'])) {
              	// Connect to the MySQL database
-              $userName  = $_SESSION["userName"];
+              $userName  =   $_SESSION["userName"];
+              $fName  =   $_SESSION['fName'];
+              $mName  =   $_SESSION['mName'];
+              $lName  =   $_SESSION['lName'];
+              $suffix  =   $_SESSION['suffix'];
+              $address  =   $_SESSION['address'];
+
               $quantity = $_POST["quantity"];
               $checkoutlink = "";
                include "php-scripts/databasehandler.script.php";
@@ -58,16 +64,17 @@
      <div class="form-group row">
        <label for="colFormLabel" class="col-sm-2 col-form-label">Name</label>
        <div class="col-sm-10">
-         <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+         <input type="email" class="form-control" id="colFormLabel" placeholder="<?php echo $fName; ?> <?php echo $mName; ?> <?php echo $lName; ?> <?php echo $suffix; ?>">
        </div>
      </div>
-      </fieldset>
+
      <div class="form-group row">
        <label for="colFormLabel" class="col-sm-2 col-form-label">Address</label>
        <div class="col-sm-10">
-         <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+         <input type="email" class="form-control" id="colFormLabel" placeholder="<?php echo $address; ?>">
        </div>
      </div>
+     </fieldset>
    </form>
 
 

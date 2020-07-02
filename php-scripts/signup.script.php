@@ -9,6 +9,12 @@ if (isset($_POST['signup-submit'])) {
   $password = $_POST['password'];
   $confpassword = $_POST['confpassword'];
 
+  $fName = $_POST['fName'];
+  $mName = $_POST['mName'];
+  $lName = $_POST['lName'];
+  $suffix = $_POST['suffix'];
+  $address = $_POST['address'];
+
    if (empty($username) || empty($email) || empty($password) || empty($confpassword)) {
      header("Location: ../signup.php?error=emptyfields&username=".$username."&email=".$email);
      exit();
@@ -59,7 +65,7 @@ if (isset($_POST['signup-submit'])) {
          }
 
           else{
-             $sql = "INSERT INTO users (usernameUser, emailUser, pwdUser) VALUES (?, ?, ?) ";
+             $sql = "INSERT INTO users (usernameUser, emailUser, pwdUser, fName, mName, lName, suffix, address) VALUES (?, ?, ?, ?, ?, ?, ?, ?) ";
              $stmnt = mysqli_stmt_init($connection);
              if(!mysqli_stmt_prepare($stmnt, $sql)){
                header("Location: ../signup.php?error=sqlerror");
@@ -68,7 +74,7 @@ if (isset($_POST['signup-submit'])) {
              else {
                $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-               mysqli_stmt_bind_param($stmnt, "sss", $username, $email, $hashedPassword );
+               mysqli_stmt_bind_param($stmnt, "ssssssss", $username, $email, $hashedPassword, $fName, $mName, $lName, $suffix, $address );
                mysqli_stmt_execute($stmnt);
                header("Location: ../signup.php?signup=success");
                exit();

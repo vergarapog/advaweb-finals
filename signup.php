@@ -31,7 +31,7 @@
             }
           }
           else if (@$_GET["signup"] == "success"){
-            echo '<p class = "">Sign up Successful!</p>';
+            echo '<center><p class = "bg-success" style="color: white;">Sign up Successful!</p></center>';
           }
          ?>
 <br>
@@ -53,7 +53,7 @@
     </div>
     <div class="col-md-3 mb-3">
 
-      <input type="text" class="form-control" name="mName" placeholder="Middle name" value="" required>
+      <input type="text" class="form-control" name="mName" placeholder="Middle name" value="" >
 
     </div>
 
@@ -67,7 +67,7 @@
     </div>
     <div class="col-md-1 mb-3">
 
-      <input type="text" class="form-control" name="suffix" placeholder="Suffix" required>
+      <input type="text" class="form-control" name="suffix" placeholder="Suffix" >
 
     </div>
   </div>
