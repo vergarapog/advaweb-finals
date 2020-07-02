@@ -33,7 +33,7 @@
                   $_SESSION['userId'] = $row['idUser'];
                   $_SESSION['userName'] = $row['usernameUser'];
 
-                  header("Location: ../index.php?login=success");
+                  header("Location: ../mainshop.php?login=success");
                   exit();
                 }
                 else {

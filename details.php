@@ -6,7 +6,8 @@
  // Check to see the URL variable is set and that it exists in the database
  if (isset($_GET['id'])) {
  	// Connect to the MySQL database
-     include "php-scripts/databasehandler.script.php";
+  $checkoutlink = "";
+   include "php-scripts/databasehandler.script.php";
  	$id = preg_replace('#[^0-9]#i', '', $_GET['id']);
  	// Use this var to check to see if this ID exists, if yes then get the product
  	// details, if no then exit this script and give message why
@@ -19,7 +20,7 @@
  			 $price = $row["price"];
  			 $details = $row["details"];
 
-
+        $checkoutlink = 'checkoutproduct.php?id=' . $id . '';
           }
 
  	} else {
@@ -56,10 +57,15 @@
          <?php echo $details; ?>
  <br />
          </p>
-       <form id="form1" name="form1" method="post" action="cart.php">
-         <input type="hidden" name="pid" id="pid" value="<?php echo $id; ?>" />
-         <input type="submit" name="button" id="button" value="Add to Shopping Cart" />
+
+       <form id="form1" name="form1" method="post" action="<?php echo $checkoutlink; ?>">
+        Quantity: <input type="number" name="quantity" id="pid" value="1" min="1" max="99"  />
+         <br><br>
+         <input class="btn btn-dark" type="submit" name="button" id="button" value="Purchase" />
        </form>
+
+
+
        </td>
      </tr>
  </table>

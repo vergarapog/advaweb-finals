@@ -51,6 +51,7 @@
               <div class="form-group">
                   <input type="text" class="form-control" name="username" placeholder="Username" >
               </div>
+              
               <br>
               <div class="form-group">
                   <input type="text" class="form-control" name="email" placeholder="E-mail" >
