@@ -32,8 +32,8 @@
              			 $price = $row["price"];
              			 $details = $row["details"];
 
-                   $payByCODLink = 'paybycod.php?id=' . $id . '';
-                   $payByCardLink = 'paybycard.php?id=' . $id . '';
+                   $payByCODLink = 'payment-pages/paybycod.php?id=' . $id . '';
+                   $payByCardLink = 'payment-pages/paybycard.php?id=' . $id . '';
                    $checkoutlink = 'checkoutproduct.php?id=' . $id . '';
                       }
 
@@ -55,36 +55,18 @@
    <div class="container register-form">
                 <div class="form">
                      <div class="note">
-                         <p>Checkout Product</p>
+                         <p>Confirm Checkout</p>
                      </div>
 <div class="form-content">
-  <fieldset disabled>
-   <form class=" mr-auto  justify-content-center " action="search.php" method="post" valign="center">
-     <div class="form-group row">
-       <label for="colFormLabel" class="col-sm-2 col-form-label">Username:</label>
-       <div class="col-sm-10">
-         <input type="email" class="form-control" id="colFormLabel" placeholder="<?php echo $userName; ?> ">
-       </div>
-     </div>
-     <div class="form-group row">
-       <label for="colFormLabel" class="col-sm-2 col-form-label">Name:</label>
-       <div class="col-sm-10">
-         <input type="email" class="form-control" id="colFormLabel" placeholder="<?php echo $fName; ?> <?php echo $mName; ?> <?php echo $lName; ?> <?php echo $suffix; ?>">
-       </div>
-     </div>
-
-     <div class="form-group row">
-       <label for="colFormLabel" class="col-sm-2 col-form-label">Address:</label>
-       <div class="col-sm-10">
-         <input type="email" class="form-control" id="colFormLabel" placeholder="<?php echo $address; ?>">
-       </div>
-     </div>
-     </fieldset>
+  <h5>To be delivered to: &nbsp;&nbsp;&nbsp; <?php echo $fName; ?> <?php echo $mName; ?> <?php echo $lName; ?> <?php echo $suffix; ?></h5>
+<br>
+  <h5> Delivery Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $address; ?></h5>
    </form>
 
 
 
 <br>
+<hr>
 <h4>Products Ordered:</h4><br>
    <div id="pageContent">
    <table width="100%" border="0" cellspacing="0" cellpadding="15" >
@@ -105,23 +87,53 @@
      </tr>
  </table>
  <br>
-<h5>Please choose mode of payment:</h5><br>
 
-          <div class="row">
+ <script>
+ $('.creditCardText').keyup(function() {
+  var foo = $(this).val().split("-").join(""); // remove hyphens
+  if (foo.length > 0) {
+    foo = foo.match(new RegExp('.{1,4}', 'g')).join("-");
+  }
+  $(this).val(foo);
+});
+</script>
 
-          <form style="padding-right: 10px; padding-left: 15px; " method="post" action="<?php echo $payByCODLink; ?>">
-            <input id="prodId" name="price" type="hidden" value="<?php echo $price * $quantity; ?>">
-            <input id="prodId" name="quantity" type="hidden" value="<?php echo $quantity; ?>">
-           <input  class="btn btn-info " type="submit" value="Cash on Delivery" />
-          </form>
+<h5>Mode of payment: <b><u>Credit Card</u></b></h5><br>
+<form style="padding-bottom: 30px; " action="payment.script.php">
 
-          <form method="post" action="<?php echo $payByCardLink; ?>">
-            <input id="prodId" name="price" type="hidden" value="<?php echo $price * $quantity; ?>">
-            <input id="prodId" name="quantity" type="hidden" value="<?php echo $quantity; ?>">
-            <input  class="btn btn-info " type="submit" value="Credit Card" />
-          </form>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Credit card number:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control creditCardText" maxlength="19"  required >
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Expiration Date:</label>
+    <div class="col-sm-10">
+      <input type="month" class="form-control" required >
+    </div>
+  </div>
 
-          </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">CVV:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" maxlength="4" required >
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row">
+
+    <input  class="btn btn-danger col-2" style="margin-right: 10px;"  value="Cancel" onclick="history.back()" />
+
+    <input  class="btn btn-success col-2" type="submit" value="Order" />
+  </div>
+
+</form>
+
+
+
    </div>
 
    </div>

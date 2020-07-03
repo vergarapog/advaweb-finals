@@ -16,8 +16,18 @@
 	</head>
 
 		<body>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<!-- 	hello-world.php or hello_world.php -->
-
+		<script>
+	  $('.creditCardText').keyup(function() {
+	   var foo = $(this).val().split("-").join(""); // remove hyphens
+	   if (foo.length > 0) {
+	     foo = foo.match(new RegExp('.{1,4}', 'g')).join("-");
+	   }
+	   $(this).val(foo);
+	 });
+	 </script>
+	 <input type="text" class="creditCardText" />
 		<div class="container">
 			<div class="card">
 

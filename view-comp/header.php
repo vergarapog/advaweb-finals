@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="css/mainshop.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript">
+
     $(document).ready(function() {
       $("#password2").keyup(validateConfPass);
     });
@@ -22,6 +23,8 @@
     $(document).ready(function() {
       $("#password1").keyup(validatePassLength);
     });
+
+
 
 function validateConfPass() {
   var password1 = $("#password1").val();
@@ -46,29 +49,10 @@ function validatePassLength() {
     }
 }
 
+
 </script>
 
-<style>
-body{ margin:0px; }
-#grid {
-    display: -ms-grid;
-    -ms-grid-columns: 25% 25% 25% 25%;
-    -ms-grid-rows: 50vh 50vh;
-}
-#grid > * { background: #CCC; border:#000 1px solid; font-size:75px; }
-#a { -ms-grid-column: 1; -ms-grid-row: 1; }
-#b { -ms-grid-column: 2; -ms-grid-row: 1; }
-#c { -ms-grid-column: 3; -ms-grid-row: 1; }
-#d { -ms-grid-column: 4; -ms-grid-row: 1; }
-#e { -ms-grid-column: 1; -ms-grid-row: 2; }
-#f { -ms-grid-column: 2; -ms-grid-row: 2; }
-#g { -ms-grid-column: 3; -ms-grid-row: 2; }
-#h { -ms-grid-column: 4; -ms-grid-row: 2; }
 
-input[type="text"]{
-              text-align: center;
-          }
-</style>
 
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
