@@ -29,6 +29,7 @@
  	$dynamicList = "We have no products listed in our store yet";
  }
  mysqli_close($connection);
+
  ?> <br>
 
  <form class="form-inline mr-auto row justify-content-center " action="search.php" method="post" valign="center">

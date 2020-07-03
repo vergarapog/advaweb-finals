@@ -77,6 +77,20 @@ if (isset($_POST['signup-submit'])) {
                mysqli_stmt_bind_param($stmnt, "ssssssss", $username, $email, $hashedPassword, $fName, $mName, $lName, $suffix, $address );
                mysqli_stmt_execute($stmnt);
                header("Location: ../signup.php?signup=success");
+
+               $now = date('Y-m-d H:i:s');
+               if(!empty($_SERVER['HTTP_CLIENT_IP'])){
+                  $ip=$_SERVER['HTTP_CLIENT_IP'];
+                }
+                elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+                  $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+                }
+                else{
+                  $ip=$_SERVER['REMOTE_ADDR'];
+                }
+               $file = fopen("../log-files/registers.txt","a+");
+               fwrite($file,"\n" . $ip . " - " . $username. " - " . $now);
+
                exit();
              }
         }

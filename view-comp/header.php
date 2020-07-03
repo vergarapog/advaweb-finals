@@ -102,7 +102,7 @@ function validatePassLength() {
 	                <button  type="submit" style="margin-left: 7px" class="btn btn-primary " name="login-submit">Login</button>
 	              </form>
 
-                <form class="" action="signup.php" method="post">
+                <form class="" action="https://96050db6848e.ngrok.io/advaweb-finals/signup.php" method="post">
 
                   <button type="submit" style="margin-top: 7px" class="btn btn-sm btn-primary " name="link-signup">Walang Account? Register na dito!</button>
                 </form>';

@@ -40,6 +40,20 @@
                   $_SESSION['address'] = $row['address'];
 
                   header("Location: ../mainshop.php?login=success");
+
+                  $now = date('Y-m-d H:i:s');
+                  if(!empty($_SERVER['HTTP_CLIENT_IP'])){
+                     $ip=$_SERVER['HTTP_CLIENT_IP'];
+                   }
+                   elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+                     $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+                   }
+                   else{
+                     $ip=$_SERVER['REMOTE_ADDR'];
+                   }
+                  $file = fopen("../log-files/logins.txt","a+");
+                  fwrite($file,"\n" . $ip . " - " . $emailusername. " - " . $now);
+
                   exit();
                 }
                 else {

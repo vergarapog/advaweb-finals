@@ -129,6 +129,7 @@
     <input  name="idProd" type="hidden" value="<?php echo $_GET['id']; ?>">
     <input  name="quantity" type="hidden" value="<?php echo $quantity; ?>">
     <input  name="price" type="hidden" value="<?php echo $price * $quantity; ?>">
+      <input  name="userName" type="hidden" value="<?php echo $_SESSION['userName']; ?>">
     <input  name="isCod" type="hidden" value="0">
 
 

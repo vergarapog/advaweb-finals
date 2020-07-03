@@ -98,6 +98,7 @@
     <input name="CCnum" type="hidden" value="" >
     <input name="CCExpDate" type="hidden" value="" >
     <input name="CVV" type="hidden"value="" >
+    <input  name="userName" type="hidden" value="<?php echo $_SESSION['userName']; ?>">
 
     <input  class="btn btn-danger col-2" style="margin-right: 10px;"  value="Cancel" onclick="history.back()" />
 
