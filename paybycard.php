@@ -99,35 +99,42 @@
 </script>
 
 <h5>Mode of payment: <b><u>Credit Card</u></b></h5><br>
-<form style="padding-bottom: 30px; " action="payment.script.php">
+<form style="padding-bottom: 30px; " method="post" action="php-scripts/payment.script.php">
 
   <div class="form-group row">
     <label for="colFormLabel" class="col-sm-2 col-form-label">Credit card number:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control creditCardText" maxlength="19"  required >
+      <input name="CCnum" type="text" class="form-control creditCardText"  pattern=".{19,}" minlength="19" maxlength="19"  required >
     </div>
   </div>
   <div class="form-group row">
     <label for="colFormLabel" class="col-sm-2 col-form-label">Expiration Date:</label>
     <div class="col-sm-10">
-      <input type="month" class="form-control" required >
+      <input name="CCExpDate" class="form-control"  type="month" min="<?php echo date('Y');?>-<?php echo date('m');?>" value="2020-07" required >
     </div>
   </div>
+
 
   <div class="form-group row">
     <label for="colFormLabel" class="col-sm-2 col-form-label">CVV:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" maxlength="4" required >
+      <input name="CVV" type="text" class="form-control" maxlength="4" required >
     </div>
   </div>
 
   <br>
 
   <div class="row">
+    <input  name="idUser" type="hidden" value="<?php echo $_SESSION['userId']; ?>">
+    <input  name="idProd" type="hidden" value="<?php echo $_GET['id']; ?>">
+    <input  name="quantity" type="hidden" value="<?php echo $quantity; ?>">
+    <input  name="price" type="hidden" value="<?php echo $price * $quantity; ?>">
+    <input  name="isCod" type="hidden" value="0">
+
 
     <input  class="btn btn-danger col-2" style="margin-right: 10px;"  value="Cancel" onclick="history.back()" />
 
-    <input  class="btn btn-success col-2" type="submit" value="Order" />
+      <button type="submit" class="btn btn-success col-2" name="payment-submit">Order</button>
   </div>
 
 </form>

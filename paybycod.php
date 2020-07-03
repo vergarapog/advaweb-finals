@@ -88,12 +88,20 @@
  </table>
  <br>
 <h5>Mode of payment: <b><u>Cash on Delivery</u></b></h5><br>
-<form style="padding-bottom: 30px; " action="<?php echo $payByCODLink ?>">
+<form style="padding-bottom: 30px; " method="post" action="php-scripts/payment.script.php">
   <div class="row">
+    <input  name="idUser" type="hidden" value="<?php echo $_SESSION['userId']; ?>">
+    <input  name="idProd" type="hidden" value="<?php echo $_GET['id']; ?>">
+    <input  name="quantity" type="hidden" value="<?php echo $quantity; ?>">
+    <input  name="price" type="hidden" value="<?php echo $price * $quantity; ?>">
+    <input  name="isCod" type="hidden" value="1">
+    <input name="CCnum" type="hidden" value="" >
+    <input name="CCExpDate" type="hidden" value="" >
+    <input name="CVV" type="hidden"value="" >
 
     <input  class="btn btn-danger col-2" style="margin-right: 10px;"  value="Cancel" onclick="history.back()" />
 
-    <input  class="btn btn-success col-2" type="submit" value="Order" />
+      <button type="submit" class="btn btn-success col-2" name="payment-submit">Order</button>
   </div>
 
 </form>
